@@ -1,0 +1,16 @@
+### USER
+GET http://{{host}}/getUserInformation/derzuverlaessigemilchmaa/{{token}}
+Content-Type: application/json
+
+### Pause
+PUT {{pause-url}}?device_id=b0dffc199378a7a616495b80bcac094867a021df
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### GET DEVICES
+GET http://{{host}}/info/getdevice={{token}}
+Content-Type: application/json
+
+### GET CURRENT SONG
+GET http://{{host}}/play/currentsong={{token}}
+Content-Type: application/json
